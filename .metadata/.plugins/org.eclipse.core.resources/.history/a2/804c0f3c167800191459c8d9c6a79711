@@ -1,0 +1,17 @@
+package com.boot.Nimz.Services.Impl;
+
+import org.springframework.stereotype.Service;
+
+import com.boot.Nimz.Services.UserServices;
+
+@Service
+public class UserServiceImpl implements UserServices{
+	
+	public String findAllUsers() {
+		
+		//DB search
+		//return all users
+		
+		return "All users";
+	}
+}

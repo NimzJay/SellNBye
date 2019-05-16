@@ -1,0 +1,12 @@
+package com.boot.Nimz.Services;
+
+import com.boot.Nimz.Model.UserDTO;
+import java.util.List;
+
+public interface UserServices {
+	
+	List<UserDTO> findAllUsers();
+	
+	String saveUser(UserDTO userdata);
+
+}

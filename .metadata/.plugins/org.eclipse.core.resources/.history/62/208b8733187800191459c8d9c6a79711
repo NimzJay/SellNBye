@@ -1,0 +1,11 @@
+package com.boot.Nimz.Services;
+
+import com.boot.Nimz.Services.Impl.List;
+import com.boot.Nimz.Services.Impl.UserDTO;
+import java.util.List;
+
+public interface UserServices {
+	
+	List<UserDTO> findAllUsers();
+
+}

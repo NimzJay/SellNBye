@@ -1,0 +1,5 @@
+package com.boot.Nimz.Services.Impl;
+
+public class UserServiceImpl {
+
+}

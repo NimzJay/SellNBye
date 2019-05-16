@@ -1,0 +1,7 @@
+package com.boot.Nimz.Services;
+
+public interface UserServices {
+	
+	String findAllUsers();
+
+}
