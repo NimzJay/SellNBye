@@ -17,51 +17,35 @@ import com.boot.Nimz.Model.UserDTO;
 import com.boot.Nimz.Services.UserServices;
 
 @RestController
-@RequestMapping ("/user")
+@RequestMapping("/user")
 public class User {
-	
+
 	@Autowired
 	private UserServices userservices;
-	
-	@GetMapping ("/all")
-    public List<UserDTO> allUsers(){
-        return userservices.findAllUsers();      
-    }
-	
+
+	@GetMapping("/all")
+	public List<UserDTO> allUsers() {
+		return userservices.findAllUsers();
+	}
+
 	@PostMapping("/add")
 	public String addUser(@RequestBody UserDTO UserData) {
 		return userservices.saveUser(UserData);
 	}
-	
+
 	@PutMapping("/update")
 	public String updateUser(@RequestBody UserDTO newUserData) {
 		return userservices.updateUser(newUserData);
 	}
-	
+
 	@GetMapping("find/{id}")
-    public Optional<UserDTO> getUserById(@PathVariable Integer id){
-        return userservices.findById(id);      
-    }
-	
+	public Optional<UserDTO> getUserById(@PathVariable Integer id) {
+		return userservices.findById(id);
+	}
+
 	@DeleteMapping("/delete/{id}")
-	public String deleteUserById(@PathVariable Integer id){
-        return userservices.dltById(id);      
-    }
-	
+	public String deleteUserById(@PathVariable Integer id) {
+		return userservices.dltById(id);
+	}
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
