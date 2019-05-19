@@ -6,12 +6,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.boot.Nimz.Model.UserDTO;
 
-public interface UserRepository extends JpaRepository <UserDTO, Integer> {
+public interface UserRepository extends JpaRepository<UserDTO, Integer> {
 
-	//getAllUsers
-	//findById
-	//delete
-	//update
-	//custom  Query
-	
+	// getAllUsers
+	// findById
+	// delete
+	// update
+	// custom Query
+
 }
