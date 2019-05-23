@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "order")
+@Table(name = "orderTab")
 public class OrderDomain {
 	
 	@Id
