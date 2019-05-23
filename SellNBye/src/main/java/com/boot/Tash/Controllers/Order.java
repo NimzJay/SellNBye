@@ -40,14 +40,12 @@ public class Order {
 		return orderservices.updateOrder(newOrderData);
 	}
 
-	
-	
 	@GetMapping("/find/{id}")
 	public Optional<OrderDomain> getOrderById(@PathVariable Integer id) {
 		return orderservices.findById(id);
 
 	}
-	
+
 	@DeleteMapping("/delete/{id}")
 	public String deleteOrderById(@PathVariable Integer id) {
 		return orderservices.deletebyId(id);

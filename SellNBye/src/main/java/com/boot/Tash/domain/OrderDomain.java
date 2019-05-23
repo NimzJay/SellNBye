@@ -10,58 +10,45 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "order")
 public class OrderDomain {
-	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name = "order_id")
-	private Integer oid;
-	
-	@Column(name = "order_type")
-	private String otype;
-	
-	@Column(name = "order_description")
+	@GeneratedValue(strategy = GenerationType.AUTO)
+
+	@Column(name = "oid")
+	private Integer id;
 	private String odescription;
-	
-	@Column(name = "order_date")
 	private String odate;
-	
-	
+	private String otype;
 
-	public Integer getoid() {
-		return oid;
+	public Integer getOid() {
+		return id;
 	}
 
-	public void setoid(Integer oid) {
-		this.oid = oid;
+	public void setOid(Integer oid) {
+		this.id = oid;
 	}
 
-	public String getotype() {
+	public String getOtype() {
 		return otype;
 	}
 
-	public void setotype(String otype) {
+	public void setOtype(String otype) {
 		this.otype = otype;
 	}
 
-	public String getodescription() {
+	public String getOdescription() {
 		return odescription;
 	}
 
-	public void setodescription(String odescription) {
+	public void setOdescription(String odescription) {
 		this.odescription = odescription;
 	}
 
-	public String getodate() {
+	public String getOdate() {
 		return odate;
 	}
 
-	public void setodate(String odate) {
-		this.odate= odate;
+	public void setOdate(String odate) {
+		this.odate = odate;
 	}
-
-	
-	
-	
-	
 
 }
